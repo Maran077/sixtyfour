@@ -1,0 +1,33 @@
+.card {
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Small box shadow */
+  overflow: hidden;
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card h2 {
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+
+.card p {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #555;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+.card p.ellipsis {
+  text-overflow: ellipsis;
+}

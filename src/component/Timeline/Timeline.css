@@ -1,0 +1,103 @@
+:root {
+  --width: 320px;
+}
+
+.container {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  width: var(--width);
+  box-shadow: none;
+  /* width: 400px; */
+}
+
+.container * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.container p {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.timeline-time {
+  position: relative;
+  max-width: 95%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.timeline-time:before {
+  background-color: black;
+  content: "";
+  margin-left: -1px;
+  position: absolute;
+  top: 0;
+  left: 30px;
+  width: 2px;
+  height: 100%;
+}
+
+.event {
+  position: relative;
+  width: var(--width);
+}
+
+.timeline-icon {
+  /* transform: rotate(45deg); */
+  background-color: black;
+  border-radius: 50%;
+  outline: 10px solid white;
+  display: block;
+  margin: 0.5em 0.5em 0.5em -0.5em;
+  position: absolute;
+  top: 0;
+  left: 2em;
+  width: 1em;
+  height: 1em;
+}
+
+.body {
+  padding: 2em 2em 0 2em;
+  position: relative;
+  top: -1.875em;
+  left: 2em;
+  width: var(--width);
+}
+
+.body h3 {
+  font-size: 1.3rem;
+}
+
+.body h4 {
+  font-size: 1.2em;
+  margin-bottom: 1.2em;
+}
+
+.body .description {
+  font-size: 0.7rem;
+}
+
+.timeline-date {
+  color: skyblue;
+  display: inline-block;
+  margin-bottom: 1.2em;
+  padding: 0.25em 1em 0.2em 1em;
+}
+
+.description strong {
+  font-weight: 700;
+}
+
+.description p {
+  padding-bottom: 1.2em;
+}

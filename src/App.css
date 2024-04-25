@@ -1,0 +1,51 @@
+:root {
+  --bar-width: 63px;
+}
+.page {
+  display: flex;
+}
+.page main {
+  width: calc(100dvw - var(--bar-width));
+}
+.page nav {
+  width: var(--bar-width);
+}
+.timedates {
+  display: flex;
+  justify-content: space-around;
+  overflow-x: hidden;
+  gap: 10px;
+  padding: 10px 10px;
+  margin-top: -50px;
+}
+
+.timelines {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  padding: 10px;
+  padding: 10px 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.timelines header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.timelines header select {
+  padding: 10px 15px;
+  margin-left: 80px;
+  border-radius: 5%;
+}
+.timelines header h4 {
+  color: slategray;
+}
+.components {
+  display: flex;
+  flex-wrap: wrap;
+}
+.carousel .control-dots .dot {
+  background: black !important;
+}
